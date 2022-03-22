@@ -1,17 +1,33 @@
 class TransactionsController < ApplicationController
   def new
+    @transaction = Transaction.new
   end
 
   def create
+    @transaction = Transaction.new(transaction_params)
+    if @transaction.save
+      redirect_to transaction_path(@transaction)
+    else
+      render "new"
+    end
   end
 
   def show
+    @transaction = Transaction.find(params[:id])
   end
 
   def accept_offer
   end
 
   def delivered?
+    if default value: false
+    else
+      true
+    end
+  end
+
+  def destroy
+    @transaction.destroy
   end
 
   private
