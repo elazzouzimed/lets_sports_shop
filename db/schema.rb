@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_21_164821) do
+ActiveRecord::Schema.define(version: 2022_03_22_111349) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2022_03_21_164821) do
     t.integer "rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "comentator_id"
     t.index ["user_id"], name: "index_feedbacks_on_user_id"
   end
 
@@ -70,6 +71,7 @@ ActiveRecord::Schema.define(version: 2022_03_21_164821) do
   end
 
   add_foreign_key "feedbacks", "users"
+  add_foreign_key "feedbacks", "users", column: "comentator_id"
   add_foreign_key "items", "sports"
   add_foreign_key "items", "users"
   add_foreign_key "transactions", "items"
