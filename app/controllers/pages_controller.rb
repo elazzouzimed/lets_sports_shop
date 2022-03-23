@@ -6,6 +6,9 @@ class PagesController < ApplicationController
     @trending_basketball = Item.where(sport: Sport.fourth).order(:created_at).take(3)
 
     @categories = Sport.all
+
+    @trending = Item.order(:created_at).take(9)
+    @feedbacks = Feedback.take(3)
   end
 
   def about
