@@ -4,6 +4,8 @@ class PagesController < ApplicationController
     @trending_tennis = Item.where(sport: Sport.second).order(:created_at).take(3)
     @trending_golf = Item.where(sport: Sport.third).order(:created_at).take(3)
     @trending_basketball = Item.where(sport: Sport.fourth).order(:created_at).take(3)
+
+    @categories = Sport.all
   end
 
   def about
