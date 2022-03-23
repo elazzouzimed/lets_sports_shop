@@ -18,7 +18,8 @@ golf = Sport.create({ name: "golf", description: "Le golf est un sport de préci
 
 p "creating Items"
 
-Item.create({ user_id: user1.id, sport_id: football.id, description: "c'est un ballon d’origin signe adidas model 2022", name:"ballon adidas", price: 125})
+item1 = Item.new({ user_id: user1.id, sport_id: football.id, description: "c'est un ballon d’origin signe adidas model 2022", name:"ballon adidas", price: 125})
+item1.errors if(!item1.save)
 Item.create({ user_id: user1.id, sport_id: tennis.id, description: "raquette rolex tout neuve avec sac de protection", name:"raquette rolex", price: 500})
 Item.create({ user_id: user3.id, sport_id: golf.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
 
