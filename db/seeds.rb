@@ -21,8 +21,41 @@ basketball = Sport.create({ name: "basketball", description: "Le basket-ball ou 
 p "creating Items"
 
 
-Item.create!({ user: user1, sport_id: tennis.id, description: "raquette rolex tout neuve avec sac de protection", name:"raquette rolex", price: 500})
-Item.create!({ user: user3, sport_id: golf.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+item1 = Item.create!({ user: user1, sport_id: tennis.id, description: "Ensemble de tenis", name:"marque rolex", price: 500})
+item1.photo.attach(io: File.open('app/assets/images/Tenis_ensemble.jpg'), filename: 'Tenis_ensemble.jpg')
+
+item2 = Item.create!({ user: user1, sport_id: tennis.id, description: "Materiels professionnels de tenis", name:"marque rodania", price: 650})
+item2.photo.attach(io: File.open('app/assets/images/Tenis_materiels.jpg'), filename: 'Tenis_materiels.jpg')
+
+item3 = Item.create!({ user: user3, sport_id: tennis.id, description: "short rodania matiere silecone signe nadal", name: "raquette rodania", price: 100})
+item3.photo.attach(io: File.open('app/assets/images/Tenis_raquette.jpeg'), filename: 'Tenis_raquette.jpeg')
+
+item4 = Item.create!({ user: user3, sport_id: golf.id, description: "ball d'origine", name:"ball", price: 70})
+item4.photo.attach(io: File.open('app/assets/images/Golf_ball.png'), filename: 'Golf_ball.png')
+
+item5 = Item.create!({ user: user3, sport_id: golf.id, description: "club signe", name:"signe", price: 350})
+item5.photo.attach(io: File.open('app/assets/images/Golf_club.jpg'), filename: 'Golf_club.jpg')
+
+item6 = Item.create!({ user: user3, sport_id: golf.id, description: "packs ensemble", name:"d'origine", price: 450})
+item6.photo.attach(io: File.open('app/assets/images/Golf_ensemble.jpg'), filename: 'Golf_ensemble.jpg')
+
+item7 = Item.create!({ user: user2, sport_id: football.id, description: "crampon signé", name:"adidas", price: 650})
+item7.photo.attach(io: File.open('app/assets/images/Foot_crampon.jpg'), filename: 'Foot_crampon.jpg')
+
+item8 = Item.create!({ user: user3, sport_id: football.id, description: "ensemble foot", name:"nick", price: 250})
+item8.photo.attach(io: File.open('app/assets/images/Foot_ensemble.jpg'), filename: 'Foot_ensemble.jpg')
+
+item9 = Item.create!({ user: user1, sport_id: football.id, description: "pack foot", name:"umbro", price: 750})
+item9.photo.attach(io: File.open('app/assets/images/Foot_materiels.jpg'), filename: 'Foot_materiels.jpg')
+
+item10 = Item.create!({ user: user1, sport_id: basketball.id, description: "ballon d'origine ", name:"jordan", price: 250})
+item10.photo.attach(io: File.open('app/assets/images/Basket_ball.jpg'), filename: 'Basket_ball.jpg')
+
+item11 = Item.create!({ user: user2, sport_id: basketball.id, description: "chaussure d'origine signe", name:"jordan", price: 150})
+item11.photo.attach(io: File.open('app/assets/images/Basket_chaussure.jpg'), filename: 'basket_chaussure.jpg')
+
+item12 = Item.create!({ user: user1, sport_id: basketball.id, description: "ensemble signe", name:"jordan", price: 850})
+item12.photo.attach(io: File.open('app/assets/images/Basket_tenue.jpg'), filename: 'basket_tenue.jpg')
 
 
 p "creating feedbacks"
