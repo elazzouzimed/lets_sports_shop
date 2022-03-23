@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+h1 {
+  text-align: center;
+  font-family: "Nunito", "Helvetica", "sans-serif";
+}
+.feedback {
+  background-color: #888888;
+  height: 60vh;
+  margin: auto;
+  font-family: "Nunito", "Helvetica", "sans-serif";
+}
+
+.feedback h3 {
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  text-align: center;
+}
