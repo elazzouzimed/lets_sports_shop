@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @trending = Item.order(:created_at).take(9)
   end
 
   def about
