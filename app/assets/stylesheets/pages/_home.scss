@@ -1,4 +1,22 @@
 // Specific CSS for your home-page
+h1 {
+  text-align: center;
+  font-family: "Nunito", "Helvetica", "sans-serif";
+}
+.feedback {
+  background-color: #888888;
+  height: 60vh;
+  margin: auto;
+  font-family: "Nunito", "Helvetica", "sans-serif";
+}
+
+.feedback h3 {
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  text-align: center;
+}
+.card {
+  min-height: 350px;
+}
 .card-category {
   background-size: cover;
   background-position: center;
@@ -10,7 +28,7 @@
   color: white;
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }

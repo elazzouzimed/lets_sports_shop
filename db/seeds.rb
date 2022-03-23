@@ -5,10 +5,10 @@ User.delete_all
 
 p "creating users"
 
-user1 = User.create!({ email: "steph@yahoo.com", username: "steph", rating: 4, password: "123456", phone_number: "06557788567" })
-user2 = User.create!({ email: "math@outlook.com", username: "mathieu", rating: 4, password: "123456", phone_number: "06114437829" })
-user3 = User.create!({ email: "hamzaa@gmail.com", username: "hamza", rating: 4, password: "123456", phone_number: "05763849264"})
-user4 = User.create!({ email: "gerard@gmail.com", username: "gerard", rating: 0, password: "123456", phone_number: "0854637685"})
+user1 = User.create!({ email: "steph@yahoo.com", username: "Karim", rating: 4, password: "123456", phone_number: "06557788567" })
+user2 = User.create!({ email: "math@outlook.com", username: "Mohamed", rating: 4, password: "123456", phone_number: "06114437829" })
+user3 = User.create!({ email: "hamzaa@gmail.com", username: "hamza ", rating: 4, password: "123456", phone_number: "05763849264"})
+user4 = User.create!({ email: "gerard@gmail.com", username: "Ahmed", rating: 0, password: "123456", phone_number: "0854637685"})
 
 p "creating sports"
 
@@ -60,8 +60,8 @@ item12.photo.attach(io: File.open('app/assets/images/Basket_tenue.jpg'), filenam
 
 p "creating feedbacks"
 
-Feedback.create!({ user_id: user1.id, comment: "tres satisfait", comentator_id: user4.id, rating: 5 })
-Feedback.create!({ user_id: user3.id, comment: "moyenement satisfait", comentator_id: user4.id, rating: 3 })
-
+Feedback.create!({ user_id: user1.id, comment: "tres satisfait", comentator_id: user1.id, rating: 5 })
+Feedback.create!({ user_id: user3.id, comment: "moyenement satisfait", comentator_id: user3.id, rating: 3 })
+Feedback.create!({ user_id: user4.id, comment: "satisfait", comentator_id: user4.id, rating: 4.5 })
 
 p "seeding DONE "
