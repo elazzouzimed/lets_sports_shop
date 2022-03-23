@@ -1,0 +1,10 @@
+ </div>
+  <h2>Ajouter un item</h2>
+  <%= simple_form_for [@item] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :photo, as: :file %>
+
+    <%= f.button :submit, {class: "btn btn-primary"}%>
+  <% end %>
+</div>
