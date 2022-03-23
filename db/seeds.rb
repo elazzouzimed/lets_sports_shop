@@ -23,6 +23,16 @@ p "creating Items"
 
 Item.create!({ user: user1, sport_id: tennis.id, description: "raquette rolex tout neuve avec sac de protection", name:"raquette rolex", price: 500})
 Item.create!({ user: user3, sport_id: golf.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: football.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: football.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: football.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: golf.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: golf.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: basketball.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: basketball.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: basketball.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: tennis.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
+Item.create!({ user: user3, sport_id: tennis.id, description: "short rodania matiere silecone signe nadal", name:"short rodania", price: 350})
 
 
 p "creating feedbacks"
