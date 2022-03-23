@@ -16,8 +16,8 @@
                               <% @trending_football.each do  |item|  %>
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
-                                        <%= image_tag("zizou.jpeg")  %>
-                                        <%# <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
+
+                                         <%= cl_image_tag item.photo.key, height: 300, width: 400, crop: :fill %>
                                         <div class="card-body">
                                             <h4 class="card-title"> <%= item.name %> </h4>
                                             <p class="card-text"> <%= item.description %> </p>
@@ -35,10 +35,11 @@
                                 <div class="col-md-4 mb-3">
 
                                     <div class="card">
-                                        <%= image_tag("curry.jpeg")  %>
+                                        <%= cl_image_tag item.photo.key, height: 300, width: 400, crop: :fill %>
                                         <div class="card-body">
-                                            <h4 class="card-title">Basket Ball</h4>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <h4 class="card-title"> <%= item.name %> </h4>
+                                            <p class="card-text"> <%= item.description %> </p>
+                                            <p class="card-footer"> <%= item.price %> </p>
 
                                         </div>
 
@@ -53,10 +54,11 @@
                                 <% @trending_tennis.each do  |item|  %>
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                        <%= cl_image_tag item.photo.key, height: 300, width: 400, crop: :fill %>
                                         <div class="card-body">
-                                            <h4 class="card-title">Special title treatment</h4>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <h4 class="card-title"> <%= item.name %> </h4>
+                                            <p class="card-text"> <%= item.description %> </p>
+                                            <p class="card-footer"> <%= item.price %> </p>
 
                                         </div>
 
@@ -70,11 +72,11 @@
                                 <% @trending_golf.each do  |item|  %>
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                        <%= cl_image_tag item.photo.key, height: 300, width: 400, crop: :fill %>
                                         <div class="card-body">
-                                            <h4 class="card-title">Special title treatment</h4>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                          <h4 class="card-title"> <%= item.name %> </h4>
+                                            <p class="card-text"> <%= item.description %> </p>
+                                            <p class="card-footer"> <%= item.price %> </p>
                                         </div>
 
                                     </div>
