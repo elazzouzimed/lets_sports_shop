@@ -13,7 +13,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                              <% @trending_football.each do  |item|  %>
+                              <% @latest_football.each do  |item|  %>
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
 
@@ -31,7 +31,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <% @trending_basketball.each do  |item|  %>
+                                <% @latest_basketball.each do  |item|  %>
                                 <div class="col-md-4 mb-3">
 
                                     <div class="card">
@@ -51,7 +51,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <% @trending_tennis.each do  |item|  %>
+                                <% @latest_tennis.each do  |item|  %>
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
                                         <%= cl_image_tag item.photo.key, height: 300, width: 400, crop: :fill %>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <% @trending_golf.each do  |item|  %>
+                                <% @latest_golf.each do  |item|  %>
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
                                         <%= cl_image_tag item.photo.key, height: 300, width: 400, crop: :fill %>
