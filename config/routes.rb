@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :sports do
     resources :items
   end
-
+  resources :items, only: [:new, :create]
 
   resources :sports
   resources :transactions
