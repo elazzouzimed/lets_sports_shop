@@ -1,6 +1,14 @@
-<div>
-<img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm" />
-<h3>Nom Prenom</h3><br>
-<h3>Membre depuis le xx/xx/xxxx</h3>
-<button type="button" class="btn btn-primary"><a href="items/new"></a>Deposer une annonce</button>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/elazzouzimed" />
+    </div>
+    <div class="col-md-10">
+      <h3><%= User.first.username %></h3>
+      <h5><%= User.first.rating %> Stars</h5>
+      <h4><%= User.first.email %></h4>
+      <h4 ><%= User.first.phone_number %></h4>
+      <a class="btn btn-primary" href="<%= new_item_path %>">Deposer une annonce</a>
+    </div>
+  </div>
 </div>
