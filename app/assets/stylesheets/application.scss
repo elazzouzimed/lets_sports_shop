@@ -13,6 +13,10 @@
 @import "components/navbar";
 @import "components/footer";
 
+.item {
+  border: 1px solid gainsboro;
+  background-color: white;
+}
 .main-container {
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 190px);
 }
