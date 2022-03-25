@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     @latest_golf = Item.where(sport: Sport.third).order(:created_at).take(3)
     @latest_basketball = Item.where(sport: Sport.fourth).order(:created_at).take(3)
 
-    @categories = Sport.all
+    @sports = Sport.all
 
     @latest = Item.order(:created_at).take(9)
     @feedbacks = Feedback.take(3)

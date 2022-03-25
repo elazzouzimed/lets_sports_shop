@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  resources :items
+  resources :users, only: :show
+
+
+  resources :sports do
+    resources :items
+  end
+  resources :items, only: [:new, :create]
+
   resources :sports
   resources :transactions
   resources :feedbacks

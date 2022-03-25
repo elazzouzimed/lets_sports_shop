@@ -1,0 +1,8 @@
+<h1><%= @sport.name %></h1>
+<div class="container">
+  <% @items.each do |item| %>
+    <%= link_to sport_item_path(@sport,item) do %>
+       <%= item.name %>
+    <% end %>
+  <% end  %>
+</div>

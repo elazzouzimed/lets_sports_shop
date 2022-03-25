@@ -1,8 +1,12 @@
-<h1 class="mx-auto mt-5" style="width: 200px;">Categories</h1>
-<div class="d-flex justify-content-between mt-5">
-  <% @categories.each do |category| %>
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-  <%=  category.name %>
-  </div>
-  <% end %>
+<h1 class = "mt-3"> <strong>OUR SPORTS</strong> </h1>
+
+
+<div class="flex-container">
+   <% @sports.each do |sport| %>
+           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+              <%= link_to sport_path(sport) do %>
+                  <h2><%= sport.name.capitalize %> </h2>
+              <% end %>
+          </div>
+   <% end %>
 </div>

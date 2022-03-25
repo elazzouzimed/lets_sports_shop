@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <%= image_tag "user.png" %>
+    </div>
+    <div class="col-md-10">
+      <h3><%= User.first.username %></h3>
+      <h5><%= User.first.rating %> Stars</h5>
+      <h4><%= User.first.email %></h4>
+      <h4 ><%= User.first.phone_number %></h4>
+      <a class="btn btn-primary" href="<%= new_item_path %>">Deposer une annonce</a>
+    </div>
+  </div>
+</div>
