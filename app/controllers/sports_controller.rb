@@ -1,5 +1,6 @@
 class SportsController < ApplicationController
-  def index
-    @sports = Sport.all
+  def show
+    @sport = Sport.find(params[:id])
+    @items = @sport.items
   end
 end
