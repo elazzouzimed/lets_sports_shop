@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:home, :about, :contact]
   def home
     @latest_football = Item.where(sport: Sport.first).order(:created_at).take(3)
     @latest_tennis = Item.where(sport: Sport.second).order(:created_at).take(3)
