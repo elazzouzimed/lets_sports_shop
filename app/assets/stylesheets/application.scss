@@ -14,5 +14,5 @@
 @import "components/footer";
 
 .main-container {
-  height: calc(100vh - 160px);
+  min-height: calc(100vh - 160px);
 }
