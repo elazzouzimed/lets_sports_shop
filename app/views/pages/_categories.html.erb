@@ -1,9 +1,9 @@
 
-<% image = sport.name + ".jpg" %>
 <section class="container categories-container">
   <h1 class = "my-5"> <strong>Nos categories de sports</strong> </h1>
   <div class="d-flex justify-content-between">
     <% @sports.each do |sport| %>
+      <% image = sport.name + ".jpg" %>
       <%= link_to sport_path(sport), class: "card-link" do %>
         <div class="card-category flex-wrap" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_url(image) %>')">
           <%= sport.name.capitalize %>
