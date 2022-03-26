@@ -1,5 +1,5 @@
 
-    <div class="container">
+    <div class="testimonials-container">
         <div class="row">
             <div class="col-12">
                 <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
@@ -14,8 +14,11 @@
                         <div class="carousel-item active">
                             <div class="row">
                               <div class="feedback">
+                              <%= image_tag "https://kitt.lewagon.com/placeholder/users/karimce", class: "avatar-large" %>
+
                                 <h3> <strong> <%= @feedbacks[0].user.username %></strong> </h3>
                                 <h3> <strong> <%= @feedbacks[0].rating %> </strong> </h3>
+                                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestias at nemo autem, quisquam voluptas exercitationem harum, animi blanditiis fugiat accusantium amet accusamus tenetur voluptatum eum quas assumenda sed! Autem.</p>
                              </div>
                             </div>
                         </div>
@@ -23,8 +26,10 @@
                         <div class="carousel-item">
                             <div class="row">
                              <div class="feedback">
+                                <%= image_tag "https://avatars.githubusercontent.com/u/74985628?v=4", class: "avatar-large" %>
                                 <h3> <strong> <%= @feedbacks[1].user.username %> </strong></h3>
                                 <h3> <strong> <%= @feedbacks[1].rating %> </strong></h3>
+                                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestias at nemo autem, quisquam voluptas exercitationem harum, animi blanditiis fugiat accusantium amet accusamus tenetur voluptatum eum quas assumenda sed! Autem.</p>
                              </div>
                             </div>
                         </div>
@@ -32,18 +37,20 @@
                          <div class="carousel-item">
                             <div class="row">
                              <div class="feedback">
+                                <%= image_tag "https://kitt.lewagon.com/placeholder/users/ahmedidrissik", class: "avatar-large" %>
                                 <h3> <strong> <%= @feedbacks[2].user.username%> </strong></h3>
                                 <h3> <strong> <%= @feedbacks[2].rating %></strong></h3>
+                                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestias at nemo autem, quisquam voluptas exercitationem harum, animi blanditiis fugiat accusantium amet accusamus tenetur voluptatum eum quas assumenda sed! Autem.</p>
                              </div>
                             </div>
                         </div>
                     </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <button class="carousel-control-prev carousel-left-btn" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                        <i class="fa fa-arrow-left carousel-arrow"></i>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <button class="carousel-control-next carousel-right-btn" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                        <i class="fa fa-arrow-right carousel-arrow"></i>
                         <span class="visually-hidden">Next</span>
                       </button>
                 </div>
