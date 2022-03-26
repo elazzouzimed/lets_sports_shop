@@ -1,15 +1,25 @@
 // Specific CSS for your home-pa
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 .categories-container {
-    margin: 56px 0;
+    margin: 76px 0;
 }
 
 .products-container {
-    margin: 56px 0;
+    margin: 76px 0;
+}
+
+.about-container {
+    margin: 76px 0;
+}
+
+.testimonials-container {
+    margin: 76px 0;
+    .testimonial-text {
+        padding: 0 12em;
+    }
 }
 
 .feedback {
-    background-color: #888888;
     height: 60vh;
     margin: auto;
     font-family: "Nunito", "Helvetica", "sans-serif";
