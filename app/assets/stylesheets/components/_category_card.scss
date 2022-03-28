@@ -1,0 +1,31 @@
+.card {
+    min-height: 350px;
+}
+
+.card-category {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 16px;
+}
+
+.card-link {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-shadow: 1px 1px 16px rgba(0, 0, 0, 0.8);
+    color: rgb(255, 252, 205);
+    font-size: 36px;
+    text-decoration: none;
+}
