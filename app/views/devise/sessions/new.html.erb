@@ -2,7 +2,7 @@
   <div class="container-login" id="login">
 	<div class="form-container sign-in-container">
 		<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-
+        <h2>Connectez vous</h2>
 			  <span>entrez votre email pour vous identifier</span>
         <div class="hidden-label">
         <%= f.input :email,

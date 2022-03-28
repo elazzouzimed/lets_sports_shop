@@ -5,9 +5,17 @@
     </div>
     <div class="col-sm-5 col-xs-12 mt-3">
       <h1> <%= @item.name %> </h1>
-      <h3> <%= @item.price %> euro </h3>
+      <h3> <%= @item.price %> MAD. </h3>
       <p> <%= @item.description %> </p>
-      <button class = "btn btn-primary">Cantacter le Vendeur</button>
+      <button id="cta" class="btn btn-primary">Contacter le Vendeur</button>
+      <p id="phone" class="d-none">Contactez moi au : <%= @item.user.phone_number %> </p>
     </div>
   </div>
 </div>
+
+<script>
+  document.getElementById("cta").addEventListener("click", (event)=> {
+    document.getElementById("phone").classList.remove("d-none");
+    document.getElementById("cta").classList.add("d-none");
+  })
+</script>
