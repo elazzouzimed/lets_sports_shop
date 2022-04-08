@@ -1,4 +1,4 @@
-<h1><%= @sport.name %></h1>
+<h1 class= "my-4" style="text-align: center; color: black; font-size: 4em;"><%= @sport.name %></h1>
 <div class="container">
   <div class="row">
   <% @items.each do |item| %>
@@ -6,13 +6,13 @@
       <div class="card mb-4 box-shadow">
          <%= cl_image_tag item.photo.key %>
         <div class="card-body">
-          <h3 class="card-text"><%= item.name %></h3>
-          <h3 class="card-text"><%= item.description %></h3>
-          <h3 class="card-text"><%= item.price %></h3>
+          <h3 class="card-text" style="color: black; font-weight: 700;"><%= item.name %></h3>
+          <h5 class="card-text"><%= item.description %></h5>
+          <h3 class="card-text" style="color: black; font-weight: 600;"><%= item.price.to_i %> DH</h3>
           <div class="d-flex justify-content-between align-items-center">
              <div class="btn-group">
-                <%= link_to sport_item_path(@sport,item) , class: "btn btn-sm btn-outline-secondary" do %>
-                   View
+                <%= link_to sport_item_path(@sport,item) , class: "details-btn" do %>
+                   Détails
                 <% end %>
              </div>
           </div>

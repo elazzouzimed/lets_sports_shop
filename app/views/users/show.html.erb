@@ -1,14 +1,62 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-2">
-      <%= image_tag "user.png" %>
-    </div>
-    <div class="col-md-10">
-      <h3><%= User.first.username %></h3>
-      <h5><%= User.first.rating %> Stars</h5>
-      <h4><%= User.first.email %></h4>
-      <h4 ><%= User.first.phone_number %></h4>
-      <a class="btn btn-primary" href="<%= new_item_path %>">Deposer une annonce</a>
+<section>
+  <div class="section about-section gray-bg" id="bio">
+    <div class="container">
+      <div class="row align-items-center flex-row-reverse">
+        <div class="col-md-8">
+          <div class="about-text go-to">
+            <h3 class="dark-color">
+              <%= @user.username %>
+            </h3>
+            <div class="row about-list">
+              <div class="col-md-6">
+                <label>Rating</label><br>
+                <%= @user.rating %>
+                  <% if @user !=current_user %>
+                    <div class="rate">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                  <% end %>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <label>E-mail</label>
+                  <p>
+                    <%= @user.email %>
+                  </p>
+                </div>
+                <div class="media">
+                  <label>Télephone</label>
+                  <p>
+                    <%= @user.phone_number %>
+                  </p>
+                </div>
+                <br>
+                <%= link_to "Editer profil" , new_user_path(current_user), id: "edit-btn" %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="about-avatar">
+            <% if current_user.photo.key==nil %>
+              <%= image_tag "https://i.pravatar.cc/300" %>
+            <% else %>
+              <%= cl_image_tag current_user.photo.key %>
+            <% end %>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  </div>
+  </div>
+</section>

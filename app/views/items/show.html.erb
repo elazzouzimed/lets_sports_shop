@@ -1,14 +1,14 @@
-<div class="item mb-5 mt-5">
+<div class="item mx-5 my-5" style="border-radius: 4px;  box-shadow: 4px 0px 4px #B2B2B2;">
   <div class="row">
-    <div class="col-sm-7 col-xs-12 mt-3">
+    <div class="col-sm-7 col-xs-12 mt-3" box-shadow: 4px 0px 4px #B2B2B2;>
        <%= cl_image_tag @item.photo.key, height: 300, width: 400, crop: :fill %>
     </div>
     <div class="col-sm-5 col-xs-12 mt-3">
-      <h1> <%= @item.name %> </h1>
-      <h3> <%= @item.price %> MAD. </h3>
+      <h1 style="color: black;"> <%= @item.name %> </h1>
+      <h3> <%= @item.price %> MAD </h3>
       <p> <%= @item.description %> </p>
-      <button id="cta" class="btn btn-primary">Contacter le Vendeur</button>
-      <p id="phone" class="d-none">Contactez moi au : <%= @item.user.phone_number %> </p>
+      <button id="cta" class="btn btn-primary">Contacter le vendeur</button>
+      <p id="phone" class="d-none">Télephone : <%= @item.user.phone_number %> </p>
     </div>
   </div>
 </div>
