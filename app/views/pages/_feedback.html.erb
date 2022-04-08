@@ -9,7 +9,7 @@
                       <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <h1> <strong>Our users feedback</strong> </h1>
+                        <h4>les retours de nos utilisateurs </h4>
 
                         <div class="carousel-item active">
                             <div class="row">
@@ -17,7 +17,14 @@
                               <%= image_tag "https://kitt.lewagon.com/placeholder/users/karimce", class: "avatar-large" %>
 
                                 <h3> <strong> <%= @feedbacks[0].user.username %></strong> </h3>
-                                <h3> <strong> <%= @feedbacks[0].rating %> </strong> </h3>
+                                 <h3> <strong class="etoile">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                      </strong>
+                                </h3>
                                 <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestias at nemo autem, quisquam voluptas exercitationem harum, animi blanditiis fugiat accusantium amet accusamus tenetur voluptatum eum quas assumenda sed! Autem.</p>
                              </div>
                             </div>
@@ -28,7 +35,13 @@
                              <div class="feedback">
                                 <%= image_tag "https://avatars.githubusercontent.com/u/74985628?v=4", class: "avatar-large" %>
                                 <h3> <strong> <%= @feedbacks[1].user.username %> </strong></h3>
-                                <h3> <strong> <%= @feedbacks[1].rating %> </strong></h3>
+                                 <h3> <strong class="etoile">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                      </strong>
+                                </h3>
                                 <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestias at nemo autem, quisquam voluptas exercitationem harum, animi blanditiis fugiat accusantium amet accusamus tenetur voluptatum eum quas assumenda sed! Autem.</p>
                              </div>
                             </div>
@@ -39,7 +52,14 @@
                              <div class="feedback">
                                 <%= image_tag "https://kitt.lewagon.com/placeholder/users/ahmedidrissik", class: "avatar-large" %>
                                 <h3> <strong> <%= @feedbacks[2].user.username%> </strong></h3>
-                                <h3> <strong> <%= @feedbacks[2].rating %></strong></h3>
+                                 <h3> <strong class="etoile">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                      </strong>
+                                </h3>
                                 <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestias at nemo autem, quisquam voluptas exercitationem harum, animi blanditiis fugiat accusantium amet accusamus tenetur voluptatum eum quas assumenda sed! Autem.</p>
                              </div>
                             </div>

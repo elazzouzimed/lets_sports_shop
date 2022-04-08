@@ -12,7 +12,7 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
     @item.user = current_user
     if @item.save
-      redirect_to item_path(@item)
+      redirect_to sport_item_path(item_params[:sport_id], @item)
     else
       render "new"
     end
