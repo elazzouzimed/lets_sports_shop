@@ -1,43 +1,49 @@
 // Specific CSS for your home-pa
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
 .categories-container {
-    margin: 76px 0;
+  margin: 76px 0;
 }
 
 .products-container {
-    margin: 76px 0;
+  margin: 76px 0;
 }
 
 .about-container {
-    margin: 76px 0;
+  margin: 76px 0;
 }
 
 .testimonials-container {
-    margin: 76px 0;
-    .testimonial-text {
-        padding: 0 12em;
-    }
+  margin: 76px 0;
+
+  .testimonial-text {
+    padding: 0 12em;
+  }
 }
 
 .feedback {
-    height: 60vh;
-    margin: auto;
-    font-family: "Nunito", "Helvetica", "sans-serif";
+  height: 60vh;
+  margin: auto;
+  font-family: "Nunito", "Helvetica", "sans-serif";
 }
 
 .feedback h3 {
-    font-family: "Nunito", "Helvetica", "sans-serif";
-    text-align: center;
+  font-family: "Nunito", "Helvetica", "sans-serif";
+  text-align: center;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .container h1 {
-    font-size: 44px;
+  font-size: 44px;
 }
 
 .container .btn {
-    border-radius: 5px 25px;
+  border-radius: 5px 25px;
+}
+
+.etoile {
+  color: goldenrod;
 }

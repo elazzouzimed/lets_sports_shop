@@ -17,8 +17,14 @@
                               <%= image_tag "https://kitt.lewagon.com/placeholder/users/karimce", class: "avatar-large" %>
 
                                 <h3> <strong> <%= @feedbacks[0].user.username %></strong> </h3>
-                                <h3> <strong> <%= @feedbacks[0].rating %> </strong> </h3>
-                                <p class="testimonial-text">Facile à utiliser, je recommende !</p>
+                                        <h3> <strong class="etoile">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                      </strong>
+                                </h3>                                <p class="testimonial-text">Facile à utiliser, je recommende !</p>
                              </div>
                             </div>
                         </div>
@@ -28,7 +34,13 @@
                              <div class="feedback">
                                 <%= image_tag "https://avatars.githubusercontent.com/u/74985628?v=4", class: "avatar-large" %>
                                 <h3> <strong> <%= @feedbacks[1].user.username %> </strong></h3>
-                                <h3> <strong> <%= @feedbacks[1].rating %> </strong></h3>
+                                <h3> <strong class="etoile">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                      </strong>
+                                </h3>
                                 <p class="testimonial-text">J'ai trouvé la paire de crampons que je cherchais depuis longtemps, Merci Let's Sports.</p>
                              </div>
                             </div>
@@ -39,7 +51,13 @@
                              <div class="feedback">
                                 <%= image_tag "https://kitt.lewagon.com/placeholder/users/ahmedidrissik", class: "avatar-large" %>
                                 <h3> <strong> <%= @feedbacks[2].user.username%> </strong></h3>
-                                <h3> <strong> <%= @feedbacks[2].rating %></strong></h3>
+                                <h3> <strong class="etoile">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                      </strong>
+                                </h3>
                                 <p class="testimonial-text">J'ai pu vendre mes raquettes sans soucis, Top !</p>
                              </div>
                             </div>
