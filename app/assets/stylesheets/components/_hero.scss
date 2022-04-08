@@ -1,32 +1,37 @@
 .banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    min-height: 240px;
 }
 
 .banner h1 {
-  color: rgb(253, 250, 250);
-  margin: 0;
-  text-shadow: 1px 1px 3px rgb(0, 0, 0);
-  font-size: 32px;
-  font-weight: bold;
+    color: rgb(253, 250, 250);
+    margin: 0;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px;
 }
 
-.banner p {
-  font-size: 20px;
-  color: rgb(8, 8, 8);
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgb(255, 254, 254);
+.banner h2 {
+    font-size: 32px;
+    color: rgb(8, 8, 8);
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgb(255, 254, 254);
+    margin: 8px;
 }
+
 .btn-flat {
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background: #1EDD88;
-  transition: background 0.3s ease;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: #1edd88;
+    transition: background 0.3s ease;
+    margin: 16px;
 }
 
 .btn-flat:hover {
-  background: #1BCB7F;
-  color: white;
+    background: #1bcb7f;
+    color: white;
 }

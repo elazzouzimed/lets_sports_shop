@@ -2,13 +2,24 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
-
 // External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
-
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
 @import "components/navbar";
 @import "components/footer";
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient( 270deg, rgba(255, 255, 255, 1) 0%, rgba(246, 255, 249, 1) 0%);
+}
+
+.item {
+    border: 1px solid gainsboro;
+    background-color: white;
+}
+
+.main-container {
+    min-height: calc(100vh - 190px);
+}
